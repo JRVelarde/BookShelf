@@ -6,33 +6,24 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 
-private val DarkColorPalette = darkColors(
-    primary = Purple200,
-    primaryVariant = Purple700,
+private val paletaOscura = darkColors(
+    primary = Mint200,
+    primaryVariant = Mint700,
     secondary = Teal200
 )
 
-private val LightColorPalette = lightColors(
-    primary = Purple500,
-    primaryVariant = Purple700,
+private val paletaClara = lightColors(
+    primary = Mint500,
+    primaryVariant = Mint700,
     secondary = Teal200
-
-    /* Other default colors to override
-    background = Color.White,
-    surface = Color.White,
-    onPrimary = Color.White,
-    onSecondary = Color.Black,
-    onBackground = Color.Black,
-    onSurface = Color.Black,
-    */
 )
 
 @Composable
 fun BookShelfTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
     val colors = if (darkTheme) {
-        DarkColorPalette
+        paletaOscura
     } else {
-        LightColorPalette
+        paletaClara
     }
 
     MaterialTheme(

@@ -1,4 +1,4 @@
-package com.partitionsoft.bookshelf
+    package com.partitionsoft.bookshelf
 
 import android.content.Intent
 import android.net.Uri

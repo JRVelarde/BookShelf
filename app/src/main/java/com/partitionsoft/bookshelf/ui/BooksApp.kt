@@ -13,7 +13,6 @@ import com.partitionsoft.bookshelf.data.Book
 import com.partitionsoft.bookshelf.ui.screens.HomeScreen
 import com.partitionsoft.bookshelf.ui.screens.MainAppBar
 
-@Preview
 @Composable
 fun BooksApp(
     modifier: Modifier = Modifier,
